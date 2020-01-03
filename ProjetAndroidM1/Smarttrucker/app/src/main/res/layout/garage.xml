@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewGarage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garage"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGarage">
+
+        <LinearLayout
+            android:id="@+id/idInfoJoueur"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/JoueurG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="@string/joueur"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textViewNameG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/textViewPointsG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/points" />
+
+            <TextView
+                android:id="@+id/textViewLicenceG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/licence" />
+
+            <Button
+                android:id="@+id/buttonAcheter_licence"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/fileds"
+                android:onClick="clickLicence"
+                android:text="@string/acheter_licence"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CamionG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Camion"
+                android:textSize="20dp"
+                tools:text="Camion" />
+
+            <TextView
+                android:id="@+id/textViewNameC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/textViewCarburantC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                tools:text="carburant" />
+
+            <TextView
+                android:id="@+id/textViewEtatC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                tools:text="Etat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonReparer"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fileds"
+                    android:onClick="clickReparer"
+                    android:text="@string/reparer"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/buttonCarburant"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fileds"
+                    android:onClick="clickCarburant"
+                    android:text="@string/mettre_du_carburant"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="728dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <Button
+            android:id="@+id/buttonRetourSave"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:textSize="11dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="300dp"
+            android:text="Retour/Save"
+            tools:text="Retour/Save"
+            android:background="@drawable/fileds"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

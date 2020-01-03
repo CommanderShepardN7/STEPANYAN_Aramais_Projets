@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Smart trucker</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_choix_charger_nouveau_utilstr">ChoixChargerNouveauUtilstr</string>
+    <string name="acheter_licence">Acheter licence</string>
+    <string name="reparer">Reparer</string>
+    <string name="mettre_du_carburant">Mettre du carburant</string>
+    <string name="garage">Garage</string>
+    <string name="joueur">Joueur</string>
+    <string name="name">name</string>
+    <string name="points">points</string>
+    <string name="licence">Licence</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="choisir_le_trajet">Choisir le trajet</string>
+    <string name="trajet_1">Trajet 1</string>
+    <string name="trajet_2">Trajet 2</string>
+    <string name="trajet_3">Trajet 3</string>
+
+</resources>

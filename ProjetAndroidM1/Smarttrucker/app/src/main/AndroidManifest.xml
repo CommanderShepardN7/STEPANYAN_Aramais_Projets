@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarttrucker">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".All_activities.MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".All_activities.ChoisirTrajet"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".All_activities.StartClass"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".All_activities.EditerClass"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".OtherClasses.Videoplay_class"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+
+        <activity
+            android:name=".All_activities.ChoixChargerNouveauUtilstr"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".All_activities.CreerUtilisateur"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".All_activities.AfficheResult"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".Charger"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".All_activities.Garage"
+            android:screenOrientation="landscape" />
+
+
+    </application>
+
+</manifest>

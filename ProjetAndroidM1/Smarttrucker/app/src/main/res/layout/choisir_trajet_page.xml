@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisir trajet"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="345dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="159dp"
+                    app:srcCompat="@drawable/trucker" />
+
+                <Button
+                    android:id="@+id/buttonGarage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Garage"
+                    android:background="@drawable/fileds"/>
+
+                <Button
+                    android:id="@+id/buttonRetour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Retour"
+                    android:background="@drawable/fileds"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="371dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/idtrajet_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/fileds"
+                    android:onClick="choisirTrajet"
+                    android:text="Trajet 1" />
+
+                <Button
+                    android:id="@+id/idtrajet_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/fileds"
+                    android:onClick="choisirTrajet"
+                    android:text="Trajet 2" />
+
+                <Button
+                    android:id="@+id/idtrajet_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/fileds"
+                    android:onClick="choisirTrajet"
+                    android:text="Trajet 3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+label{
+				margin-right: 50px;
+				margin-left: 50px;
+			}
+
+		
+			.btn {
+					border : solid 15px #1a8a41;
+				border-radius : 20px 3px 20px 4px ;
+				moz-border-radius : 20px 3px 20px 4px ;
+				-webkit-box-shadow : 11px 12px 6px rgba(0,0,0,0.5);
+				-moz-box-shadow : 11px 12px 6px rgba(0,0,0,0.5);
+				box-shadow : 11px 12px 6px rgba(0,0,0,0.5);
+				font-size : 20px;
+				color : #ffffff;
+				padding : 1px 17px;
+				background : #31fa1e;
+				background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31fa1e), color-stop(100%,#30ab00));
+				background : -moz-linear-gradient(top, #31fa1e 0%, #30ab00 100%);
+				background : -webkit-linear-gradient(top, #31fa1e 0%, #30ab00 100%);
+				background : -o-linear-gradient(top, #31fa1e 0%, #30ab00 100%);
+				background : -ms-linear-gradient(top, #31fa1e 0%, #30ab00 100%);
+				background : linear-gradient(top, #31fa1e 0%, #30ab00 100%);
+				filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#31fa1e', endColorstr='#30ab00',GradientType=0 );
+
+
+}
+
+}
+
+		/*.btn  {
+		  display: inline-block;
+		  margin-top: 10px;
+		  margin-right:10px;
+		  padding: 15px 25px;
+		  font-size: 24px;
+		  cursor: pointer;
+		  text-align: center;
+		  text-decoration: none;
+		  outline: none;
+		  color: #fff;
+		  background-color: #4CAF50;
+		  border: none;
+		  border-radius: 15px;
+		  box-shadow: 0 9px #999;
+		}*/
+
+		.btn[text=]:hover {background-color: #3e8e41}
+
+		.btn:active {
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		 }
+
+		 .container {
+			  display: block;
+			  position: relative;
+			  padding-left: 35px;
+			  margin-bottom: 12px;
+			  margin-left: 500px;
+			  cursor: pointer;
+			  font-size: 22px;
+			  -webkit-user-select: none;
+			  -moz-user-select: none;
+			  -ms-user-select: none;
+			  user-select: none;
+			}
+
+		/* Hide the browser's default radio button */
+		.container input {
+		  position: absolute;
+		  opacity: 0;
+		  cursor: pointer;
+		}
+
+		/* Create a custom radio button */
+		.checkmark {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 35px;
+		  width: 35px;
+		  background-color: #eee;
+		  border-radius: 50%;
+		  margin-right: 20px;
+		  margin-right: 20px;
+
+		}
+
+		/* On mouse-over, add a grey background color */
+		.container:hover input ~ .checkmark {
+		  background-color: #ccc;
+		}
+
+		/* When the radio button is checked, add a blue background */
+		.container input:checked ~ .checkmark {
+		  background-color: #65FE00;
+		}
+
+		/* Create the indicator (the dot/circle - hidden when not checked) */
+		.checkmark:after {
+		  content: "";
+		  position: absolute;
+		  display: none;
+		}
+
+		/* Show the indicator (dot/circle) when checked */
+		.container input:checked ~ .checkmark:after {
+		  display: block;
+		}
+
+		/* Style the indicator (dot/circle) */
+		.container .checkmark:after {
+		 	top: 9px;
+			left: 9px;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: white;
+		}

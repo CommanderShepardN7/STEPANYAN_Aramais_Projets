@@ -1,0 +1,86 @@
+body, html{
+	width: 100%;
+	height: 100%;
+	color: #222;
+
+}
+/* Scrolling des pages modal pour creation chantier */
+.modal-dialog{
+    overflow-y: initial !important
+}
+/*#modal_scroll_page{
+    height: 500px;
+    overflow-y: auto;
+}*/
+
+.modal-body{
+	height: 500px;
+	overflow-y: auto;
+}
+/************************************************/
+
+.tableChantierAndMap{
+	display: grid;
+	grid-template-columns: 7fr 7fr;
+}
+
+#formulaireConnexion{
+	margin-top: 7%;
+	margin-left: 37%;
+	margin-right: 37%;
+	border: thick double #32a1ce;
+	background-color: #f9f9f9;
+}
+
+#tableChantiers{
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 50px;
+}
+
+/*PAGE Intervention*/
+#pageIntervention{
+	margin-top: 30px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.pageInterventionAndPhoto{
+	display: grid;
+	grid-template-columns: 4fr 7fr;
+}
+
+#photoIntervention{
+	margin-right: 50px;
+}
+/************************/
+
+/*.carousel {
+	width:70%;
+	height:70%;
+}*/
+
+
+
+/*******Carte************/
+#OSMap{
+	border: 4mm ridge rgba(51, 132, 63, .6);
+	width:auto;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	height:780px;
+}
+
+/*******Bar de navigation************/
+.navbar-brad img{
+	width: 170px;
+}
+/*******Distance entre les liens************/
+.navbar-nav li{
+	padding-right: 20px;
+}
+/*******Pour agrandir les liens************/
+.nav-link{
+	font-size: 1.1em !important
+}
+/*******FIN Bar de navigation************/
