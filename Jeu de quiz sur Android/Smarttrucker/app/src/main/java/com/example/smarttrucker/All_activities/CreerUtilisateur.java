@@ -11,12 +11,10 @@ import com.example.smarttrucker.OtherClasses.Camion;
 import com.example.smarttrucker.R;
 import com.example.smarttrucker.OtherClasses.Utilisateur;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CreerUtilisateur extends AppCompatActivity {
 
-    private List<Utilisateur> listUtilisateurs;
+    private String nomCamion = "Volvo";
+    private int reservoirCamion = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,23 +37,8 @@ public class CreerUtilisateur extends AppCompatActivity {
 
     private Utilisateur nouveauUtilisateur(){
         EditText nomUtilisateur;
-
         nomUtilisateur = (EditText)findViewById(R.id.nomUtilisateur);
-        Utilisateur nUtilisateur = new Utilisateur(nomUtilisateur.getText().toString(),new Camion("Volvo", 100));
 
-        //Lire fichier avec tous les utilisateurs
-        listUtilisateurs = new ArrayList<>();
-
-        listUtilisateurs.add(nUtilisateur);
-        //ecrire dans fichier
-
-        return listUtilisateurs.get(listUtilisateurs.size() - 1);
-
-
+        return new Utilisateur(nomUtilisateur.getText().toString(),new Camion(nomCamion, reservoirCamion));
     }
-
-
-
-
-
 }
