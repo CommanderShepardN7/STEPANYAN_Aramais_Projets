@@ -13,31 +13,11 @@ $connect = mysqli_connect($host, $username, $my_password, $my_db);	// Connexion 
 mysqli_set_charset($connect,"utf-8");		//encodage utf-8
 
 
-    function getFromBDLevel1(){
+    function getFromBD($level){
       global $connect;
 
       $sql = "SELECT questionText,urlVideo,reponse1,reponse2,reponse3,reponse4
-            FROM smartTrucker WHERE level = 1 ";
-      $result = mysqli_query($connect, $sql);
-
-      return createArray($result);
-    }
-
-    function getFromBDLevel2(){
-      global $connect;
-
-      $sql = "SELECT questionText,urlVideo,reponse1,reponse2,reponse3,reponse4
-            FROM smartTrucker WHERE level = 2 ";
-      $result = mysqli_query($connect, $sql);
-
-      return createArray($result);
-    }
-
-    function getFromBDLevel3(){
-      global $connect;
-
-      $sql = "SELECT questionText,urlVideo,reponse1,reponse2,reponse3,reponse4
-            FROM smartTrucker WHERE level = 3 ";
+            FROM smartTrucker WHERE level = $level ";
       $result = mysqli_query($connect, $sql);
 
       return createArray($result);
@@ -61,9 +41,9 @@ mysqli_set_charset($connect,"utf-8");		//encodage utf-8
     }else{
 
       echo json_encode(array(
-      'level1' => getFromBDLevel1(),
-      'level2' => getFromBDLevel2(),
-      'level3' => getFromBDLevel3()));
+      'level1' => getFromBD(1),
+      'level2' => getFromBD(2),
+      'level3' => getFromBD(3)));
        mysqli_close($connect);
   }
 
