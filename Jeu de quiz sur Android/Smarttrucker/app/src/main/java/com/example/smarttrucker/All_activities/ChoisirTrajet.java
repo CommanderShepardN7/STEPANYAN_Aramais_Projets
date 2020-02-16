@@ -32,7 +32,7 @@ public class ChoisirTrajet extends AppCompatActivity {
         //On sauvegarde ou on met à jour notre utilisateur.
         if (!nomActivityPrecedent.equals("ChoixChargerNouveauUtilstr")) {
             try {
-                SaveLoadUtilisateur svLDutil = new SaveLoadUtilisateur(utilisateur, this);
+                new SaveLoadUtilisateur(utilisateur, this);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
